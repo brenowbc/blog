@@ -7,8 +7,26 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div id="sidebar">
+		<div id="logo">
+			<%= link_to root_path do %>
+				<!-- <%= image_tag "logo.png" %> -->
+			<%end %>
+		</div>
+		<ul>
+			<li class="category">Website</li>
+			<li><%= link_to "Blog", root_path %></li>
+			<li>Sobre</li>
+		</ul>
+		<ul>
+			<li class="category">Social</li>			
+			<li><a href="http://instagram.com/brenowbc">Instagram</a></li>
+			<li><a href="https://github.com/brenowbc">Github</a></li>
+			<li><a href="mailto:brenowbc@gmail.com">Email</a></li>
+		</ul>
 
-<%= yield %>
+	</div>
+	<%= yield %>
 
 </body>
 </html>
